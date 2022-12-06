@@ -1,3 +1,7 @@
+import CTA from "../components/call-to-action";
+import Footer from "../components/footer";
+import Hero from "../components/hero";
+import ImageBackground from "../components/image-background";
 import Navbar from "./../components/navbar";
 
 export default function Home() {
@@ -5,9 +9,13 @@ export default function Home() {
     <>
       <Navbar />
 
-      <div className=" flex flex-col h-screen justify-center items-center">
-        <p className=" text-teal-700 font-bold">This is working</p>{" "}
-      </div>
+      <Hero />
+
+      <CTA />
+
+      <ImageBackground />
+
+      <Footer />
     </>
   );
 }
